@@ -1,0 +1,22 @@
+uuid: f38b1a2f-90fd-48e1-bf5a-0971a0122d97
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.gallery.field_gallery_images
+    - field.field.media.gallery.field_media_image_1
+    - media.type.gallery
+id: media.gallery.media_library
+targetEntityType: media
+bundle: gallery
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_gallery_images: true
+  field_media_image_1: true
+  name: true
+  path: true
+  status: true
+  uid: true

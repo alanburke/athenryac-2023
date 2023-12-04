@@ -21,8 +21,8 @@ settings:
       - bulletedList
       - numberedList
       - '|'
+      - drupalMedia
       - blockQuote
-      - drupalInsertImage
       - '|'
       - heading
       - code
@@ -36,8 +36,6 @@ settings:
         - heading4
         - heading5
         - heading6
-    ckeditor5_imageResize:
-      allow_resize: true
     ckeditor5_list:
       reversed: false
       startIndex: true
@@ -56,6 +54,8 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: true
   scheme: public

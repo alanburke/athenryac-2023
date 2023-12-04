@@ -1,18 +1,16 @@
-uuid: 3d4ee457-e20c-46f3-94ff-0e59199b52d6
+uuid: 1551ec9b-330c-4473-a771-5f7889aa9a0a
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.article
+    - node.type.event
   module:
     - text
-_core:
-  default_config_hash: 4Wxs1LseZ8JsNwD9uJVIbzZqG35yQXN8Eo1Hub6NMuI
-id: node.article.body
+id: node.event.body
 field_name: body
 entity_type: node
-bundle: article
+bundle: event
 label: Body
 description: ''
 required: false
@@ -20,7 +18,7 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  display_summary: false
+  display_summary: true
   required_summary: false
   allowed_formats: {  }
 field_type: text_with_summary

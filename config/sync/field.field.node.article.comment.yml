@@ -19,7 +19,7 @@ required: false
 translatable: true
 default_value:
   -
-    status: 2
+    status: 1
     cid: 0
     last_comment_timestamp: 0
     last_comment_name: null
@@ -31,5 +31,5 @@ settings:
   per_page: 50
   anonymous: 0
   form_location: true
-  preview: 1
+  preview: 0
 field_type: comment

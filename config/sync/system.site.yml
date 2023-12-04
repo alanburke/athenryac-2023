@@ -2,8 +2,8 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 5d9ffd89-9eab-43ac-8d06-acf3f004e231
-name: 'Drush Site-Install'
-mail: admin@example.com
+name: 'Athenry AC'
+mail: alan@athenryac.com
 slogan: ''
 page:
   403: ''
@@ -12,3 +12,4 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
+mail_notification: ''

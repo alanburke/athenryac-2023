@@ -1,18 +1,18 @@
-uuid: 08f7e046-27f0-4bf3-9e9d-5c2119478a49
+uuid: 7f3ea950-ff5e-41e9-a0d6-7bfddc378ef0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
+    - field.storage.media.field_gallery_images
+    - media.type.gallery
     - media.type.image
-    - node.type.article
-id: node.article.field_image
-field_name: field_image
-entity_type: node
-bundle: article
-label: Image
+id: media.gallery.field_gallery_images
+field_name: field_gallery_images
+entity_type: media
+bundle: gallery
+label: 'Gallery Images'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
