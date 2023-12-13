@@ -1,0 +1,22 @@
+uuid: ea3c6e38-8c77-48e5-98a9-0a9c6da24d53
+langcode: en
+status: true
+dependencies:
+  theme:
+    - track
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: track_primary_local_tasks
+theme: track
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

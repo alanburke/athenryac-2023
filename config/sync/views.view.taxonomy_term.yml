@@ -29,7 +29,7 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 25
           total_pages: 0
           id: 0
           tags:
@@ -90,17 +90,18 @@ display:
           exposed: false
           granularity: second
       arguments:
-        tid:
-          id: tid
-          table: taxonomy_index
-          field: tid
+        term_node_tid_depth:
+          id: term_node_tid_depth
+          table: node_field_data
+          field: term_node_tid_depth
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: taxonomy_index_tid
+          entity_type: node
+          plugin_id: taxonomy_index_tid_depth
           default_action: 'not found'
           exception:
-            value: ''
+            value: all
             title_enable: false
             title: All
           title_enable: true
@@ -118,19 +119,14 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: true
+          specify_validation: false
           validate:
-            type: 'entity:taxonomy_term'
+            type: none
             fail: 'not found'
-          validate_options:
-            bundles: {  }
-            access: true
-            operation: view
-            multiple: 0
+          validate_options: {  }
           break_phrase: false
-          add_table: false
-          require_value: false
-          reduce_duplicates: false
+          depth: 1
+          use_taxonomy_term_path: false
       filters:
         langcode:
           id: langcode

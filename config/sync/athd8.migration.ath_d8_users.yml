@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: TMM--qTBwvofErBRsDLI8YZiSKRf5EO2H_LMvpKQg4A
+id: ath_d8_users
+label: 'D8 Users'
+migration_group: d8
+source:
+  plugin: d7_user
+  key: migrate
+process:
+  name: name
+  mail: mail
+  pass: pw_hash
+  status: status
+destination:
+  plugin: 'entity:user'
+  md5_passwords: true

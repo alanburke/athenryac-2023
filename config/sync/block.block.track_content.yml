@@ -1,0 +1,22 @@
+uuid: d36cc6de-0b81-4471-be92-9c33ed9610d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - track
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: track_content
+theme: track
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

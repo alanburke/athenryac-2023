@@ -5,37 +5,30 @@ dependencies:
   config:
     - field.field.media.gallery.field_gallery_images
     - field.field.media.gallery.field_media_image_1
-    - image.style.large
+    - image.style.medium
     - media.type.gallery
   module:
-    - image
+    - photoswipe
 id: media.gallery.default
 targetEntityType: media
 bundle: gallery
 mode: default
 content:
   field_gallery_images:
-    type: entity_reference_entity_view
-    label: above
+    type: photoswipe_field_formatter
+    label: hidden
     settings:
-      view_mode: default
-      link: false
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_media_image_1:
-    type: image
-    label: visually_hidden
-    settings:
-      image_link: ''
-      image_style: large
-      image_loading:
-        attribute: lazy
+      photoswipe_thumbnail_style_first: ''
+      photoswipe_thumbnail_style: medium
+      photoswipe_image_style: ''
+      photoswipe_reference_image_field: field_media_image
+      photoswipe_view_mode: default
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   created: true
+  field_media_image_1: true
   name: true
   thumbnail: true
   uid: true

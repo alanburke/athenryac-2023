@@ -3,19 +3,25 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
+    - media.type.document
+    - media.type.gallery
+    - media.type.image
     - node.type.article
+    - node.type.event
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
     - file
+    - filter
+    - media
     - node
     - path
     - system
     - taxonomy
     - toolbar
-    - tour
 _core:
   default_config_hash: NtMgnXp0miNtJhag07NSjwdCm4zpJwhlDFs1HgyL4wI
 id: content_editor
@@ -23,27 +29,52 @@ label: 'Content editor'
 weight: 2
 is_admin: false
 permissions:
-  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
+  - 'access media overview'
   - 'access toolbar'
-  - 'access tour'
-  - 'administer url aliases'
   - 'create article content'
+  - 'create document media'
+  - 'create event content'
+  - 'create gallery media'
+  - 'create image media'
   - 'create page content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any article content'
+  - 'delete any document media'
+  - 'delete any event content'
+  - 'delete any file'
+  - 'delete any gallery media'
+  - 'delete any image media'
+  - 'delete any page content'
   - 'delete article revisions'
+  - 'delete event revisions'
   - 'delete own article content'
+  - 'delete own event content'
   - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
+  - 'edit any article content'
+  - 'edit any document media'
+  - 'edit any event content'
+  - 'edit any gallery media'
+  - 'edit any image media'
+  - 'edit any page content'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'skip comment approval'
+  - 'update any media'
+  - 'use text format basic_html'
+  - 'view all media revisions'
   - 'view all revisions'
+  - 'view media'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view the administration theme'

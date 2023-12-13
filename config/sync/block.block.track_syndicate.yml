@@ -1,0 +1,23 @@
+uuid: db6b497b-f3d8-4b55-b4e7-84c81a786924
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - track
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: track_syndicate
+theme: track
+region: sidebar_first
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

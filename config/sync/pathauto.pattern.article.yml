@@ -7,12 +7,12 @@ dependencies:
 id: article
 label: Article
 type: 'canonical_entities:node'
-pattern: '[node:field_tags:0:entity:parent]/[node:field_tags:0:entity:name]/[node:created:custom:Y]-[node:created:custom:m]/[node:title]'
+pattern: '[node:field_tags:entity:parent:name]/[node:field_tags:entity:name]/[node:created:custom:Y]-[node:created:custom:m]/[node:title]'
 selection_criteria:
-  3486cdcb-0eee-447e-af9b-76150c8116a0:
+  588ad6f4-225e-4d43-85d6-f6c5cb5d5d72:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 3486cdcb-0eee-447e-af9b-76150c8116a0
+    uuid: 588ad6f4-225e-4d43-85d6-f6c5cb5d5d72
     context_mapping:
       node: node
     bundles:

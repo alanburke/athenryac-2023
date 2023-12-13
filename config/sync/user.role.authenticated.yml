@@ -3,11 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - filter.format.basic_html
+    - filter.format.restricted_html
   module:
     - comment
-    - contact
-    - file
     - filter
     - media
     - search
@@ -23,10 +21,8 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'access site-wide contact form'
-  - 'delete own files'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'use text format basic_html'
+  - 'use text format restricted_html'
   - 'view media'

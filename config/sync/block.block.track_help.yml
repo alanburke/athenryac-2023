@@ -1,0 +1,22 @@
+uuid: c311f92a-15ed-477b-a4e7-d38512e448a1
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - track
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: track_help
+theme: track
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
