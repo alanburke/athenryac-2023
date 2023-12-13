@@ -1,0 +1,45 @@
+id: d8_files
+label: D8 Files
+migration_group: legacy
+
+source:
+  plugin: d8_entity
+  entity_type: file  
+  constants:
+    DRUPAL_FILE_DIRECTORY: 'public://' 
+    DRUPAL_8_FILES: '../legacy-files/' 
+
+process:
+  fid: fid
+  uuid: uuid
+  uid: uid
+  filename: filename
+  filemime: filemime
+  filesize: filesize
+  status: status
+  created: created
+
+  file_source_path:
+    source: uri
+    plugin: str_replace
+    search: 'public://'
+    replace: ''  
+  file_full_path:
+    plugin: concat
+    source:
+      - constants/DRUPAL_8_FILES
+      - '@file_source_path'
+
+  uri:
+    -
+      plugin: file_copy
+      source:
+        - '@file_full_path'
+        - uri
+
+destination:
+  plugin: entity:file
+
+migration_dependencies:
+  required:
+    - d8_users

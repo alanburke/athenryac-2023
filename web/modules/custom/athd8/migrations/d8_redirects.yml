@@ -1,0 +1,31 @@
+id: d8_redirects
+label: D8 Redirects
+migration_group: legacy
+
+source:
+  plugin: d8_entity
+  entity_type: redirect
+
+process:
+  rid: rid
+  uuid: uuid
+  uid: uid
+  type: type
+  status_code: status_code
+  created: created
+  changed: changed
+  language: language
+  redirect_source/path: redirect_source__path
+  redirect_source/query: redirect_source__query
+  redirect_redirect/uri: redirect_redirect__uri 
+destination:
+  plugin: entity:redirect
+
+migration_dependencies:
+  required:
+    - d8_files
+    - d8_users
+    - d8_taxonomy_tags
+    - d8_node_page
+    - d8_node_event
+    - d8_node_article

@@ -1,0 +1,41 @@
+id: d8_node_page
+label: D8 Page Nodes
+migration_group: legacy
+
+source:
+  plugin: ath_d8_node
+  entity_type: node
+  bundle: page   
+
+process:
+  nid: nid
+  uuid: uuid
+  uid: uid
+  status: status
+  created: created
+  changed: changed
+  bundle:
+    plugin: default_value
+    default_value: event
+  title: title
+  body/value: legacy_content
+  body/format:
+    plugin: default_value
+    default_value: basic_html
+  path/alias: alias
+  path/pathauto:
+    plugin: default_value
+    default_value: false    
+
+destination:
+  plugin: entity:node
+  default_bundle: page
+
+migration_dependencies:
+  required:
+    - d8_users
+    - d8_files
+    - d8_media_image
+    - d8_media_galleries
+    - d8_media_documents
+    - d8_taxonomy_tags

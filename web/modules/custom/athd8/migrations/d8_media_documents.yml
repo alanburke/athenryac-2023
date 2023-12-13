@@ -1,0 +1,20 @@
+id: d8_media_documents
+label: D8 Media Documents
+migration_group: legacy
+
+source:
+  plugin: athd8_media_document  
+
+process:
+  bundle:
+    plugin: default_value
+    default_value: document
+  field_media_document: field_para_files_target_id
+
+destination:
+  plugin: entity:media
+
+migration_dependencies:
+  required:
+    - d8_files
+    - d8_media_images

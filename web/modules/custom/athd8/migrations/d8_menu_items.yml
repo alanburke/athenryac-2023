@@ -1,0 +1,39 @@
+id: d8_menu_items
+label: D8 Menu Items
+migration_group: legacy
+
+source:
+  plugin: d8_entity
+  entity_type: menu_link_content
+
+process:
+  id: id
+  uuid: uuid
+  revision_id: revision_id
+  langcode: langcode
+  bundle: bundle
+  enabled: enabled
+  title: title
+  description: description
+  menu_name: menu_name
+  link/uri: link__uri
+  link/title: link__title
+  link/options: link__options
+  external: external
+  weight: weight
+  expanded: expanded
+  parent: parent
+  changed: changed
+
+destination:
+  plugin: entity:menu_link_content
+
+migration_dependencies:
+  required:
+    - d8_files
+    - d8_users
+    - d8_taxonomy_tags
+    - d8_node_page
+    - d8_node_event
+    - d8_node_article
+    - d8_redirects

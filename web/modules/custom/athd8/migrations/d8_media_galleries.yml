@@ -1,0 +1,26 @@
+id: d8_media_galleries
+label: D8 Media Galleries
+migration_group: legacy
+
+source:
+  plugin: athd8_media_gallery
+
+process:
+  bundle:
+    plugin: default_value
+    default_value: gallery
+  field_media_image_1: cover_image
+  field_gallery_images:
+    - source: gallery_images
+      plugin: explode
+      delimiter: ,
+    - plugin: migration_lookup
+      migration: d8_media_images
+      no_stub: true
+destination:
+  plugin: entity:media
+
+migration_dependencies:
+  required:
+    - d8_files
+    - d8_media_images

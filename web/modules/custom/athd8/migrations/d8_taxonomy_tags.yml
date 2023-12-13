@@ -1,0 +1,28 @@
+id: d8_taxonomy_tags
+label: D8 Taxonomy Tags
+migration_group: legacy
+
+source:
+  plugin: d8_entity
+  entity_type: taxonomy_term
+  bundle: tags
+
+process:
+  tid: tid
+  uuid: uuid
+  uid: uid
+  status: status
+  created: created
+  changed: changed
+  name: name
+  parent: parent
+  weight: weight
+
+destination:
+  plugin: entity:taxonomy_term
+  default_bundle: tags
+
+migration_dependencies:
+  required:
+    - d8_users
+    - d8_files

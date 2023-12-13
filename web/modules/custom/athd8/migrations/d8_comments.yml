@@ -1,0 +1,35 @@
+id: d8_comments
+label: D8 Comments
+migration_group: legacy
+
+source:
+  plugin: d8_entity
+  entity_type: comment
+
+process:
+  cid: cid
+  uuid: uuid
+  uid: uid
+  pid: pid
+  entity_id: entity_id
+  entity_type: entity_type
+  field_name: field_name
+  subject: subject
+  name: name
+  mail: mail
+  thread: thread
+  created: created
+  changed: changed
+  status: status
+  language: language
+  comment_body: comment_body
+
+destination:
+  plugin: entity:comment
+
+migration_dependencies:
+  required:
+    - d8_files
+    - d8_users
+    - d8_node_article
+    - d8_node_event

@@ -1,0 +1,11 @@
+name: Athenry AC D8 migrate
+type: module
+description: Migrate content from legacy
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools
+  - migrate_drupal
+  - migrate_drupal_d8

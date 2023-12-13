@@ -1,0 +1,35 @@
+id: d8_users
+label: D8 Users
+migration_group: legacy
+
+source:
+  plugin: d8_entity
+  entity_type: user  
+
+process:
+  uid:
+    plugin: skip_on_value
+    method: row
+    source: uid
+    value: 
+      - 0
+      - 1
+  name: name
+  mail: mail
+  created: created
+  changed: changed
+  access: access
+  login: login
+  status: status
+  language:
+    plugin: default_value
+    default_value: 'en'
+  default_langcode:
+    plugin: default_value
+    default_value: 1    
+  roles:
+    plugin: default_value
+    default_value: 'content_editor'
+
+destination:
+  plugin: entity:user
