@@ -1,0 +1,11 @@
+name: track
+type: theme
+description: 'Custom Athenry AC theme.'
+core_version_requirement: '>=9.2'
+libraries:
+  - track/global
+base theme: olivero
+ckeditor5-stylesheets:
+  - css/components/gallery.css
+logo: images/logo.png
+favicon: images/favicon.ico

@@ -1,0 +1,11 @@
+name: PhotoSwipe
+description: 'Javascript-based photo gallery display for your Drupal website (very sleek with mobile browsers).'
+core_version_requirement: ^9.3 || ^10
+type: module
+package: Media
+configure: photoswipe.settings
+
+# Information added by Drupal.org packaging script on 2023-10-12
+version: '5.0.0-rc4'
+project: 'photoswipe'
+datestamp: 1697097412

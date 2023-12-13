@@ -1,0 +1,13 @@
+name: 'CKEditor custom config'
+type: module
+description: 'Extends core CKEditor to support custom configuration.'
+package: Custom
+core_version_requirement: ^9 || ^10
+
+dependencies:
+  - ckeditor:ckeditor
+
+# Information added by Drupal.org packaging script on 2023-02-17
+version: '8.x-3.4'
+project: 'ckeditor_config'
+datestamp: 1676656975

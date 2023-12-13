@@ -1,0 +1,12 @@
+type: module
+name: Drupal 8+ to Drupal 8+ migration
+description: Migration from one Drupal 8+ site to another.
+package: Migration
+core_version_requirement: ^8.9 || ^9 || ^10
+dependencies:
+  - drupal:migrate
+
+# Information added by Drupal.org packaging script on 2022-05-23
+version: '8.x-1.0'
+project: 'migrate_drupal_d8'
+datestamp: 1653316701
