@@ -29,7 +29,9 @@ applications:
       "web/sites/default/files": # Represents the path in the app.
         source: "storage" # "storage" sources are unique to the app, but shared among instances of the app. "service" sources can be shared among apps.
         source_path: "sites/default/files" # The subdirectory within the mounted disk (the source) where the mount should point.
-
+      '/tmp':
+        source: tmp
+        source_path: 'tmp'
     # The web key configures the web server running in front of your app.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#web
     web:
