@@ -32,6 +32,9 @@ applications:
       '/tmp':
         source: tmp
         source_path: 'tmp'
+      '/private':
+        source: local
+        source_path: 'private'        
     # The web key configures the web server running in front of your app.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#web
     web:
