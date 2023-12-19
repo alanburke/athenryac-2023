@@ -86,6 +86,7 @@ class ComposerStaticInitb10504d8a6758a1daeb1a84ab2a9541c
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
+            'Platformsh\\ConfigReader\\' => 24,
             'PhpParser\\' => 10,
             'Peast\\' => 6,
         ),
@@ -324,6 +325,10 @@ class ComposerStaticInitb10504d8a6758a1daeb1a84ab2a9541c
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Platformsh\\ConfigReader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/platformsh/config-reader/src',
         ),
         'PhpParser\\' => 
         array (
